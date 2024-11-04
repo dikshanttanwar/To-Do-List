@@ -114,3 +114,16 @@ li.checked{
     text-decoration: line-through;
     color:#959595;
 }
+.sections {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly lower */
+    animation: fadeInUp 1s forwards; /* Apply animation */
+}
+
+/* Define the animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End in original position */
+    }
+}
